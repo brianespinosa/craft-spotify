@@ -1,15 +1,15 @@
 <?php
 /**
- * @link      https://dukt.net/craft/github/
- * @copyright Copyright (c) 2015, Dukt
- * @license   https://dukt.net/craft/github/docs/license
+ * @link      https://github.com/brianespinosa/craft-spotify
+ * @copyright Copyright (c) 2016, Brian Espinosa
+ * @license   https://github.com/brianespinosa/craft-spotify
  */
 
 namespace Dukt\OAuth\Providers;
 
 use Craft\UrlHelper;
 
-class Github extends BaseProvider
+class Spotify extends BaseProvider
 {
     // Public Methods
     // =========================================================================
@@ -21,7 +21,7 @@ class Github extends BaseProvider
      */
     public function getName()
     {
-        return 'GitHub';
+        return 'Spotify';
     }
 
     /**
@@ -31,7 +31,7 @@ class Github extends BaseProvider
      */
     public function getIconUrl()
     {
-        return UrlHelper::getResourceUrl('github/icon.svg');
+        return UrlHelper::getResourceUrl('spotify/icon.svg');
     }
 
     /**
@@ -51,7 +51,7 @@ class Github extends BaseProvider
      */
     public function getManagerUrl()
     {
-        return 'https://github.com/settings/applications/';
+        return 'https://developer.spotify.com/my-applications/';
     }
 
     /**
@@ -61,13 +61,13 @@ class Github extends BaseProvider
      */
     public function getScopeDocsUrl()
     {
-        return 'https://developer.github.com/v3/oauth/#scopes';
+        return 'https://developer.spotify.com/web-api/using-scopes/';
     }
 
     /**
-     * Create Github Provider
+     * Create Spotify Provider
      *
-     * @return Github
+     * @return Spotify
      */
     public function createProvider()
     {
@@ -77,6 +77,6 @@ class Github extends BaseProvider
             'redirectUri' => $this->getRedirectUri(),
         ];
 
-        return new \League\OAuth2\Client\Provider\Github($config);
+        return new \League\OAuth2\Client\Provider\Spotify($config);
     }
 }
