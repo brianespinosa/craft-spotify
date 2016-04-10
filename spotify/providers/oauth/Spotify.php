@@ -1,8 +1,8 @@
 <?php
 /**
  * @link      https://github.com/brianespinosa/craft-spotify
- * @copyright Copyright (c) 2016, Brian Espinosa
- * @license   https://github.com/brianespinosa/craft-spotify
+ * @copyright Copyright (c) 2016, Spotify
+ * @license   https://github.com/brianespinosa/craft-spotify/blob/release/master/LICENSE.md
  */
 
 namespace Dukt\OAuth\Providers;
@@ -65,7 +65,7 @@ class Spotify extends BaseProvider
     }
 
     /**
-     * Create Spotify Provider
+     * Create Github Provider
      *
      * @return Spotify
      */

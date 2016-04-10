@@ -4,7 +4,7 @@ namespace Craft;
 /**
  * @link      https://github.com/brianespinosa/craft-spotify
  * @copyright Copyright (c) 2016, Brian Espinosa
- * @license   https://github.com/brianespinosa/craft-spotify
+ * @license   https://github.com/brianespinosa/craft-spotify/blob/release/master/LICENSE.md
  */
 
 
@@ -52,6 +52,6 @@ class SpotifyPlugin extends BasePlugin
      */
     function getDeveloperUrl()
     {
-        return 'https://bje.co/';
+        return 'https://github.com/brianespinosa/craft-spotify';
     }
 }
