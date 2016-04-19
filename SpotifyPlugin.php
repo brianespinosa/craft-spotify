@@ -7,7 +7,7 @@ namespace Craft;
  * @license   https://github.com/brianespinosa/craft-spotify/blob/release/master/LICENSE.md
  */
 
-
+require_once(CRAFT_PLUGINS_PATH . 'spotify/vendor/autoload.php');
 
 class SpotifyPlugin extends BasePlugin
 {
